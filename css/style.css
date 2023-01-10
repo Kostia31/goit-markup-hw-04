@@ -336,8 +336,13 @@ body {
 .link-customers:hover,
 .link-customers:focus{
   border: 1px solid var(--btn-color);
-  
+
 }
+
+.link-customers:hover > .icon-customers,
+.link-customers:focus > .icon-customers{
+  fill: var(--btn-color);
+} 
 
 .item-customers:not(:last-child) {
   margin-right: 24px;
@@ -346,17 +351,9 @@ body {
 .icon-customers {
   width: 104px;
   height: 56px;
+  
   fill: var(--border-company);
 }
-
-.icon-customers:hover,
-.icon-customers:focus {
-  fill: var(--btn-color);
-  
-}
-
-
-
 
 /* footer */
 
