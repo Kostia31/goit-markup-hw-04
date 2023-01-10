@@ -334,8 +334,9 @@ body {
 }
 
 .link-customers:hover,
-.link-customers:focus {
+.link-customers:focus{
   border: 1px solid var(--btn-color);
+  
 }
 
 .item-customers:not(:last-child) {
@@ -343,13 +344,18 @@ body {
 }
 
 .icon-customers {
+  width: 104px;
+  height: 56px;
   fill: var(--border-company);
 }
 
 .icon-customers:hover,
 .icon-customers:focus {
   fill: var(--btn-color);
+  
 }
+
+
 
 
 /* footer */
@@ -409,6 +415,13 @@ body {
   padding: 8px;
   background-color: var(--footer-link-bg);
   border-radius: 50%;
+}
+
+
+.icon-footer{
+  width: 24px;
+  height: 24px;
+  
 }
 
 .social-media:hover,
