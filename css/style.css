@@ -52,7 +52,8 @@ body {
   text-decoration: none;
 }
 
-.link.link-nav {
+.link-nav {
+  position: relative;
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -71,6 +72,23 @@ body {
 
 .link-nav:active {
   color: var(--brand-color);
+}
+
+.current {
+  color: var(--btn-color);
+}
+
+.current:after {
+  position: absolute;
+  bottom: 0px;
+
+  display: block;
+  content: "";
+  background-color: var(--btn-color);
+  width: 100%;
+  height: 4px;
+
+  border-radius: 2px;
 }
 
 .link-auth {
@@ -224,7 +242,6 @@ body {
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
-  
 }
 
 /* main */
@@ -329,21 +346,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 32px; 
+  padding: 16px 32px;
   border-radius: 4px;
   border: 1px solid var(--border-company);
 }
 
 .link-customers:hover,
-.link-customers:focus{
+.link-customers:focus {
   border: 1px solid var(--btn-color);
-
 }
 
 .link-customers:hover > .icon-customers,
-.link-customers:focus > .icon-customers{
+.link-customers:focus > .icon-customers {
   fill: var(--btn-color);
-} 
+}
 
 .item-customers:not(:last-child) {
   margin-right: 24px;
@@ -352,7 +368,7 @@ body {
 .icon-customers {
   width: 104px;
   height: 56px;
-  
+
   fill: var(--border-company);
 }
 
@@ -402,7 +418,7 @@ body {
   color: var(--accent-color);
 }
 
-.item-media:not(:last-child){
+.item-media:not(:last-child) {
   margin-right: 16px;
 }
 
@@ -415,11 +431,9 @@ body {
   border-radius: 50%;
 }
 
-
-.icon-footer{
+.icon-footer {
   width: 24px;
   height: 24px;
-  
 }
 
 .social-media:hover,
@@ -472,7 +486,7 @@ body {
   background-color: var(--btn-color);
   color: var(--accent-color);
   border-color: var(--btn-color);
-  
+
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -510,4 +524,21 @@ body {
 
 .item-card:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+
+.thumb{
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0px;
+}
+
+.text-thumb{
+  position: absolute;
+
+  top: 0;
+  left: 0;
 }
